@@ -1,0 +1,460 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>日盛</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style type="text/css">
+	
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+	
+body {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    perspective: 1400px;
+    -webkit-perspective: 1400px;
+    -moz-perspective: 1400px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    background-color: transparent;
+}
+#banner {
+    width: 768px;
+    height: 253px;
+    position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+}
+	
+.bg1 {
+        width: 768px;
+        height: 253px;
+        position: absolute;
+	
+
+    }
+
+ 
+#slogan {
+        width: 255px;
+        height: 95px;
+        position: absolute;
+        animation-name: ami-00;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+	
+    }
+    @keyframes ami-00 {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0%;
+        }
+    }
+    
+
+	
+#slogan2 {		
+        width: 374px;
+        height: 147px;
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 5s steps(20);
+		animation-name: ami-02;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+	    
+    }
+
+    @keyframes ami-02 {
+        from {
+            left: -100%;
+		
+        }
+        to {
+            left: 0%;
+	
+        }
+
+    }
+	
+#fund1 {
+	  width: 176px;
+	  height: 21px;
+	  position: absolute;
+      font-family:"微軟正黑體";
+      font-weight:bold;
+	  color: #FFFFFF;
+	  animation-name: ami9-02;
+	  animation-fill-mode: forwards;
+	  animation-delay: 0.3s;
+	  animation-duration:1s;
+	  margin-left: 53px;
+	  margin-top: 155px;
+	  opacity: 0;
+	  
+    }	
+	
+#fund2 {
+	  width: 113px;
+	  height: 21px;
+      position: absolute;
+	  animation-name: ami9-02;
+	  animation-fill-mode: forwards;
+	  animation-delay: 0.3s;
+	  animation-duration: 1s;
+	  margin-left: 240px;
+	  margin-top: 155px;
+	  opacity: 0;
+	  
+
+    }	
+	
+#fund3 {
+	  width: 389px;
+	  height: 42px;
+      position: absolute;
+	  animation-name: ami9-03;
+	  animation-fill-mode: forwards;
+	  animation-delay: 0.3s;
+	  animation-duration: 1s;
+	  margin-left: 53px;
+	  margin-top: 180px;
+	  opacity: 0;
+	  
+    }
+	
+ 
+#bg2 {
+        width: 768px;
+        height: 253px;
+        opacity: 0;
+        position: absolute;
+        animation-delay: 3.5s;
+        animation-duration: 1s;
+        animation-name: ami2-04;
+        animation-fill-mode: forwards;
+	    
+	
+    }
+	
+#bgb {
+        width: 768px;
+        height: 253px;
+        opacity: 0;
+        position: absolute;
+        animation-delay: 3.5s;
+        animation-duration: 1s;
+        animation-name: ami2-04;
+        animation-fill-mode: forwards;
+	    left: 0px;
+        top: 0px;
+        z-index: -1;
+
+	
+    }	
+ @keyframes ami2-04 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+
+    }	
+	
+	@keyframes ami9-02 {
+				from {
+				opacity: 0;
+				-webkit-transform-origin: 100% 10px;
+				-moz-transform-origin: 100% 10px;
+				-ms-transform-origin: 100% 10px;
+				transform-origin: 100% 10px;
+			    -webkit-transform: rotateX(0deg);
+			    -moz-transform: rotateX(0deg);
+			    -o-transform: rotateX(0deg);
+			    transform: rotateX(0deg);
+				}
+				to {
+			    opacity: 1;
+				-webkit-transform-origin: 100% 10px;
+				-moz-transform-origin: 100% 10px;
+				-ms-transform-origin: 100% 10px;
+				transform-origin: 100% 10px;
+			    -webkit-transform: rotateX(360deg);
+			    -moz-transform: rotateX(360deg);
+			    -o-transform: rotateX(360deg);
+			    transform: rotateX(360deg);
+				}
+	    }
+	
+	 @keyframes ami9-03 {
+				from {
+				opacity: 0;
+				-webkit-transform-origin: 100% 21px;
+				-moz-transform-origin: 100% 21px;
+				-ms-transform-origin: 100% 21px;
+				transform-origin: 100% 21px;
+			    -webkit-transform: rotateX(0deg);
+			    -moz-transform: rotateX(0deg);
+			    -o-transform: rotateX(0deg);
+			    transform: rotateX(0deg);
+				}
+				to {
+			    opacity: 1;
+				-webkit-transform-origin: 100% 21px;
+				-moz-transform-origin: 100% 21px;
+				-ms-transform-origin: 100% 21x;
+				transform-origin: 100% 21px;
+			    -webkit-transform: rotateX(360deg);
+			    -moz-transform: rotateX(360deg);
+			    -o-transform: rotateX(360deg);
+			    transform: rotateX(360deg);
+				}
+	    }
+	
+	
+	    @keyframes ami9-01 {
+				from {
+				opacity: 0;
+				-webkit-transform-origin: 100% 32px;
+				-moz-transform-origin: 100% 32px;
+				-ms-transform-origin: 100% 32px;
+				transform-origin: 100% 32px;
+			    -webkit-transform: rotateX(0deg);
+			    -moz-transform: rotateX(0deg);
+			    -o-transform: rotateX(0deg);
+			    transform: rotateX(0deg);
+				}
+				to {
+			    opacity: 1;
+				-webkit-transform-origin: 100% 32px;
+				-moz-transform-origin: 100% 32px;
+				-ms-transform-origin: 100% 32px;
+				transform-origin: 100% 32px;
+			    -webkit-transform: rotateX(360deg);
+			    -moz-transform: rotateX(360deg);
+			    -o-transform: rotateX(360deg);
+			    transform: rotateX(360deg);
+				}
+	    }
+		
+	
+	#buy1 {
+				position: absolute;
+				animation-name: ami9-01;
+				animation-fill-mode: forwards;
+				animation-delay:5s;
+				animation-duration:1s;
+			    margin-left: 350px;
+			    margin-top: 155px;
+			    opacity: 0;
+			    z-index: 3;
+	    }
+	 
+	#buy2 {
+				position: absolute;
+				animation-name: ami9-01;
+				animation-fill-mode: forwards;
+				animation-delay:5.5s;
+				animation-duration: 1s;
+		        margin-left: 530px;
+			    margin-top: 155px;
+			    opacity: 0;
+		     
+	    }
+
+@keyframes slide {
+    0%  {
+        transform: scale(1, 1) translateY(1);
+    }
+    
+    15%, 70% {
+        transform: scale(1, 1) translateY(0);
+    }
+    
+    90% {
+        transform: scale(1, 1) translateY(0);
+    }
+    
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+	
+	
+ #buy {     width: 768px;
+		        height: 253px;
+				position: absolute;
+				animation-name: ami-04;
+				animation-fill-mode: forwards;
+				animation-delay:5.5s;
+				animation-duration: 2.5s;
+				opacity: 0;
+		        z-index: 3;		    			
+	    }
+	
+		@keyframes ami-04 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+
+    }	
+
+#wrap {
+
+    display: table;
+    overflow: hidden;
+    position: absolute;  
+	margin-left: 440px;
+	display: table-cell;
+	
+}
+
+
+
+.app {
+    width: -144px;
+    height: -71px;
+    display: inline-block;
+    transform: scale(0, 0) translateY(0);
+    animation-name: slide;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+	animation-delay: 5s;
+
+}
+#cencal{		
+		width: 289px;
+		height: 143px;
+		position: absolute;
+		
+		
+	}
+.car {
+        width: 289px;
+        height: 143px;
+	    margin-top: 50px;
+	    position: absolute;
+        animation-name: ami-05;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+	    animation-delay: 4.5s;
+	    opacity: 0;	    
+	    	
+    }	
+	
+	@keyframes ami-05{
+        from {
+            left: 0px;
+			top:0px;		
+			opacity:1;	
+
+        }
+        to {
+            left:800px;
+			top:150px;			
+			opacity: 0.9;
+			
+        }
+    }
+	
+#car1 {
+        width: 358px;
+        height: 207px;
+        position: absolute;
+        animation-name: ami-06;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+	    animation-delay: 5s;
+	    opacity: 0;	 
+	  
+    }	
+	
+@keyframes ami-06 {
+        from {
+            left: -100px;
+			top:-10px;
+			opacity: 0;
+			
+        }
+        to {
+            left: 0px;	
+			top:0px;
+			opacity: 1;
+			
+			
+		
+        }
+
+    }
+	
+	
+#type { width: 768px;
+	    height: 253px;
+        position: absolute;
+        animation-name: ami-07;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+	    animation-delay: 5s;
+	    opacity: 0;
+	    
+	 
+    }
+	
+ @keyframes ami-07 {
+        from {
+
+			opacity: 0;
+
+        }
+        to {
+
+			opacity: 1;
+        }
+    }
+
+
+
+</style>
+
+<body class="htmlNoPages">
+		<a href="https://www.jsfunds.com.tw/content/Event/2018FUND2Q/" target="_blank">
+		<div id="banner" style="cursor:pointer;">
+   
+        <img src="img/bg1.jpg" class="bg1">
+        <img src="img/slogan.gif" id="slogan">
+		<img src="img/slogan2.png" id="slogan2">
+        <img src="img/fund1.jpg" id="fund1" >
+        <img src="img/fund2.jpg" id="fund2">
+        <img src="img/fund3.jpg" id="fund3">
+        <img src="img/bg2.jpg" id="bg2">		 	 
+        <img src="img/car.png" id="cencal" class="car">
+        <img src="img/type.png" id="type">
+        <img src="img/bid.png" id="wrap" class="app">
+		<img src="img/bid.gif" id="buy"	>
+        <img src="img/flip_rate.png" id="buy1">
+        <img src="img/0.png" id="buy2">
+		<img src="img/car1.png" id="car1">
+		<img src="img/Q2-768x253-02.jpg" id="bgb">		
+    </div>
+     </a>
+</body>
+
+</html>

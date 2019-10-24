@@ -1,0 +1,389 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>日盛</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style type="text/css">
+	
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+	
+body {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    perspective: 1400px;
+    -webkit-perspective: 1400px;
+    -moz-perspective: 1400px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    background-color: transparent;
+}
+
+#banner {
+    width: 768px;
+    height: 253px;
+    position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+}
+	
+bg {
+        width: 768px;
+        height: 253px;
+        position: absolute;
+
+    }
+  
+.slogan {
+        width: 768px;
+        height: 253px;
+        position: absolute;
+        animation-name: ami-Q3-01;
+	    animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+    }
+	
+    @keyframes ami-Q3-01 {
+         from {
+            left: -100%;
+		
+        }
+        to {
+            left: 0%;
+	
+        }
+    }
+  	
+.slogan2 {		
+        width: 768px;
+        height: 253px;
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 5s steps(20);
+        animation-name: ami-Q3-01;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+	    
+    }
+
+.Q3-text01 {		
+        width:768px;
+        height: 253px;
+        position: absolute;
+        animation-name:  ami-Q3-03;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.2s; 
+        opacity: 0;
+
+    }
+
+.Q3-text02 {		
+        width: 768px;
+        height: 253x;
+        position: absolute;
+        animation-name:  ami-Q3-03;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.4s; 
+        opacity: 0;	    
+
+    }
+
+ 
+.Q3-text03 {		
+        width: 768px;
+        height: 253x;
+        position: absolute;
+        animation-name:  ami-Q3-03;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.6s; 
+        opacity: 0;
+	    
+    }
+
+.Q3-text04 {		
+        width: 768px;
+        height: 253x;
+        position: absolute;
+        animation-name:  ami-Q3-03;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.8s; 
+        opacity: 0;
+
+    }
+
+@keyframes ami-Q3-03 {
+        from {
+            opacity: 0;
+            bottom: -100%;
+        }
+        to {
+            opacity: 1;
+            bottom: 0%;
+        }
+
+    }	
+   
+#bgb {
+        width: 768px;
+        height: 253px;
+        opacity: 0;
+        position: absolute;
+        animation-name: ami-Q3-bg;
+        animation-fill-mode: forwards;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+    }	
+
+ @keyframes ami-Q3-bg {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+
+    }	
+
+#refresh_hovertree{
+	left:438px;
+	position:absolute;
+	animation:changehovertree 0.1s linear infinite;
+	margin-top: 38px;
+	opacity: 0;
+	animation-delay: 4.1s;
+	}
+	
+@-webkit-keyframes changehovertree{
+	0%{-webkit-transform:rotate(0); opacity: 0;} 
+	50%{-webkit-transform:rotate(180deg); opacity: 0;}
+	100%{-webkit-transform:rotate(360deg); opacity: 0;}
+	
+	}
+@keyframes changehovertree{
+	0%{transform:rotate(0); opacity: 1;}  
+	50%{transform:rotate(180deg); opacity: 1;}
+	100%{transform:rotate(360deg); opacity: 1;}
+	}
+	
+.air{
+    width: 768px;
+    height: 253px;
+    position: absolute;
+    animation-duration:3s;
+    animation-name: ami-Q3-02;
+	opacity: 0;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+
+	}
+@keyframes ami-Q3-02 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+
+    }		
+	
+#bg2 {
+        width: 768px;
+        height: 253px;
+        opacity: 0;
+        position: absolute;
+        animation-delay: 4s;
+        animation-duration: 1s;
+        animation-name: ami-Q3-02;
+        animation-fill-mode: forwards;
+
+	    
+    }	
+	
+#wrap {
+
+    display: table;
+    overflow: hidden;
+    position: absolute;  
+	display: table-cell;
+	
+}
+
+
+.app {
+
+    display: inline-block;
+    transform: scale(0, 0) translateY(0);
+    animation-name: slide;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+	animation-delay: 5s;
+
+}
+#type { width: 768px;
+	    height: 253px;
+        position: absolute;
+        animation-name: ami-Q3-04;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+	    animation-delay: 4s;
+	    opacity: 0;
+	    z-index: 1;
+	  
+    }
+	
+ @keyframes ami-Q3-04 {
+        from {
+
+			opacity: 0;
+
+        }
+        to {
+
+			opacity: 1;
+        }
+    }
+#buy {     width: 768px;
+		   height: 253px;
+		   position: absolute;
+		   animation-name: ami-Q3-05;
+		   animation-fill-mode: forwards;
+		   animation-delay:4s;
+		   animation-duration: 1s;
+		   opacity: 0;
+		   z-index: 5;		    			
+	    }
+	
+		@keyframes ami-Q3-05 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+
+    }	
+@keyframes ami-Q3-06 {
+				from {
+				opacity: 0;
+				-webkit-transform-origin: 100% 32px;
+				-moz-transform-origin: 100% 32px;
+				-ms-transform-origin: 100% 32px;
+				transform-origin: 100% 32px;
+			    -webkit-transform: rotateX(0deg);
+			    -moz-transform: rotateX(0deg);
+			    -o-transform: rotateX(0deg);
+			    transform: rotateX(0deg);
+				}
+				to {
+			    opacity: 1;
+				-webkit-transform-origin: 100% 32px;
+				-moz-transform-origin: 100% 32px;
+				-ms-transform-origin: 100% 32px;
+				transform-origin: 100% 32px;
+			    -webkit-transform: rotateX(360deg);
+			    -moz-transform: rotateX(360deg);
+			    -o-transform: rotateX(360deg);
+			    transform: rotateX(360deg);
+				}
+	    }
+		
+	
+	#buy1 {
+				position: absolute;
+				animation-name: ami-Q3-06;
+				animation-fill-mode: forwards;
+				animation-delay:4.5s;
+				animation-duration:1s;
+			    margin-left: 40px;
+			    margin-top: 175px;
+			    opacity: 0;
+			    z-index: 3;
+	    }
+	 
+	#buy2 {
+				position: absolute;
+				animation-name: ami-Q3-06;
+				animation-fill-mode: forwards;
+				animation-delay:5.2s;
+				animation-duration: 1s;
+		        margin-left: 200px;
+			    margin-top: 175px;
+			    opacity: 0;
+		        z-index: 3;
+	    }
+#aircraft {
+        width: 768px;
+        height:253px;
+        position: absolute;
+        animation-name: ami-Q3-07;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+	    animation-iteration-count:infinite;
+
+        	  
+    }	 
+	
+@keyframes ami-Q3-07 {
+        	
+           0% {  
+               transform: translate(0px, 0px); 
+			   opacity:1;
+           }  
+           50% {  
+               transform: translate(0px, 10px); 
+			   opacity: 1;
+           }  
+           100% {  
+               transform: translate(0px, 0px); 
+			   opacity: 1;
+           }  
+	}
+
+
+@keyfra
+</style>
+
+<body class="htmlNoPages">
+	<a href="https://www.jsfunds.com.tw/content/Event/2018FUND3Q/" target="_blank">
+		<div id="banner" style="cursor:pointer;">
+		<img src="img/Q3-aircraft.png" id="aircraft">
+		<img src="img/Q3-slogan01.gif" class="slogan">
+		<img src="img/Q3-slogan02.png" class="slogan2">
+        <img src="img/Q3-text01.png" class="Q3-text01">
+		<img src="img/Q3-text02.png" class="Q3-text02">
+		<img src="img/Q3-text03.png" class="Q3-text03">
+		<img src="img/Q3-text04.png" class="Q3-text04">
+		<img src="img/Q3-bid.png" id="wrap" class="app">
+		<img src="img/Q3-bid.gif" id="buy"	>
+		<img src="img/Q3-type.png" id="type">
+	    <img src="img/Q3-flip_rate.png" id="buy1">
+        <img src="img/Q3-0.png" id="buy2">	
+		<img src="img/Q3-bg.jpg" id="bg2">
+		<img src="img/Q3-r.png"  id="refresh_hovertree">
+		<img src="img/Q3-performance.png" class=" air">
+		<img src="img/Q3-sky.jpg" id="bg">
+		<img src="img/Q3-768x253-02.jpg" id="bgb">
+
+	
+    </div>
+		</a>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>日盛</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style type="text/css">
+	
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+	
+body {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    perspective: 1400px;
+    -webkit-perspective: 1400px;
+    -moz-perspective: 1400px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    background-color: transparent;
+}
+#banner {
+    width: 768px;
+    height: 253px;
+    position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+	
+.bg {
+        width: 768px;
+        height: 253px;
+        position: absolute;	    
+    }
+
+.add{   width: 768px;
+        height: 253px;
+        position: absolute;
+       -webkit-filter: drop-shadow(6px 6px 3px rgba(0, 0, 0, 0.7));
+        filter: drop-shadow(6px 6px 3px rgba(0, 0, 0, 0.3));
+	}
+
+#team{   width: 768px;
+        height: 253px;
+        position: absolute;
+	    animation-name: ami-a01;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;	   
+	}
+@keyframes ami-a01 {
+        from {
+			bottom:100%;
+        }
+        to {
+             bottom:0%;			
+        }	
+                    }	
+
+#r01{   width: 768px;
+        height: 253px;
+        position: absolute;
+	    animation-name: ami-a02;
+        animation-duration: 0.2s;
+	    animation-delay: 0.5s;
+        animation-fill-mode: forwards;	
+	    opacity: 0;
+	}
+@keyframes ami-a02 {
+        from {
+			bottom:100%;
+			opacity: 1;
+        }
+        to {
+             bottom:0%;
+			 opacity: 1;
+        }	
+                    }
+#l01{   width: 768px;
+        height: 253px;
+        position: absolute;
+	    animation-name: ami-a03;
+        animation-duration: 0.2s;
+	    animation-delay: 0.8s;
+        animation-fill-mode: forwards;	
+	    opacity: 0;
+	}
+@keyframes ami-a03 {
+        from {
+			bottom:100%;
+			opacity: 1;
+        }
+        to {
+             bottom:0%;
+			 opacity: 1;
+        }	
+                    }
+#r02{   width: 768px;
+        height: 253px;
+        position: absolute;
+	    animation-name: ami-a04;
+        animation-duration: 0.2s;
+	    animation-delay: 1s;
+        animation-fill-mode: forwards;	
+	    opacity: 0;
+	}
+@keyframes ami-a04 {
+        from {
+			bottom:100%;
+			opacity: 1;
+        }
+        to {
+             bottom:0%;
+			 opacity: 1;
+        }	
+                    }
+#l02{   width: 768px;
+        height: 253px;
+        position: absolute;
+	    animation-name: ami-a05;
+        animation-duration: 0.2s;
+	    animation-delay: 1.2s;
+        animation-fill-mode: forwards;	
+	    opacity: 0;
+	}
+@keyframes ami-a05 {
+        from {
+			bottom:100%;
+			opacity: 1;
+        }
+        to {
+             bottom:0%;
+			 opacity: 1;
+        }	
+                    }
+#main{   width: 768px;
+        height: 253px;
+        position: absolute;
+	    animation-name: ami-a06;
+        animation-duration: 0.2s;
+	    animation-delay: 1.4s;
+        animation-fill-mode: forwards;	
+	    opacity: 0;
+	}
+@keyframes ami-a06 {
+        from {
+			bottom:100%;
+			opacity: 1;
+        }
+        to {
+             bottom:0%;
+			 opacity: 1;
+        }	
+                    }
+#qrcode{   width: 768px;
+           height: 253px;
+           position: absolute;
+	       animation-name: ami-a07;
+           animation-duration: 0.3s;
+           animation-fill-mode: forwards;
+	       animation-delay: 1.5s;
+	       opacity: 0;
+	}
+@keyframes ami-a07 {
+				from {
+				left:100%;
+				opacity: 0;
+				}
+				to {
+			    left:0%;
+			    opacity: 1;
+				}
+	    }
+#bg2 {
+        width: 768px;
+        height: 253px;
+        opacity: 0;
+        position: absolute;
+        animation-fill-mode: forwards;
+	    left: 0px;
+        top: 0px;
+        z-index: -1;
+
+	
+    }	
+	
+</style>
+
+<body class="htmlNoPages">
+	<a href="https://www.jsfunds.com.tw/content/Event/2018line/" target="_blank">
+	<div id="banner" style="cursor:pointer;">
+                <img src="img/bg.png" class="bg">
+		<img src="img/lineAdd.gif" class="add" >
+		<img src="img/team.png" id="team" >
+		<img src="img/r01.png" id="r01" >
+		<img src="img/l01.png" id="l01" >
+		<img src="img/r02.png" id="r02" >
+		<img src="img/l02.png" id="l02" >
+		<img src="img/main.png" id="main" >
+		<img src="img/qrcode.png" id="qrcode" >
+		<img src="img/768x253.jpg" id="bg2">
+		
+    </div>
+</a>
+</body>
+
+</html>

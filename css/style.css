@@ -1,0 +1,122 @@
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+  .btn-outline-dark {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+  }
+
+  .btn-outline-dark:hover,
+  .btn-outline-dark:active:hover,
+  .btn-outline-dark.active:hover {
+    color: #000000;
+    background-color:#ffffff;
+    border-color: #000000;
+    box-shadow: 5px 5px #000000;
+  }
+
+  .btn-outline-dark.active,
+  .btn-outline-dark.active.focus {
+    border-color: #000000;
+    color:#ffffff;
+    background-color: #000000;
+  }
+
+  .dark {
+    transition: ease-in .3s;
+    background: linear-gradient(0, #000000 2px, #000000 2px) no-repeat,
+      linear-gradient(-90deg, #000000 2px, #000000 2px) no-repeat,
+      linear-gradient(-180deg, #000000 2px, #000000 2px) no-repeat,
+      linear-gradient(-270deg, #000000 2px, #000000 2px) no-repeat;
+    background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+    background-position: left top, right top, right bottom, left bottom;
+
+  }
+
+  .dark:hover {
+    background-size: 0% 0px, 5px 100%, 100% 5px, 5px 100%;
+    z-index: 99;
+
+  }
+
+  
+
+  .btndown{
+    margin-bottom: 5%;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .box {
+    margin: 0 auto;
+    padding: 20px;
+    /* width: 80%; */
+    
+  }
+
+  .single-item div {
+    width: 100%;
+    padding: 5px;
+    
+  }
+
+  .imgbox {
+    width: 100%;
+  }
+  .rowpadding{
+    padding-bottom: 2%;
+  }
+  h4{
+    font-family: "微軟正黑體";
+    font-weight: bold;
+  }
+ a, p{
+    font-family: "微軟正黑體";}
+   
+@media (max-width: 576px) { 
+  .icon01,
+  .icon02,
+  .icon03,
+  .icon04 {
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
+  }
+
+ } 
+
+@media (min-width: 768px) { 
+  .icon01,
+  .icon02,
+  .icon03,
+  .icon04 {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+   
+  }
+  .col-md-6{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+@media (min-width: 1200px) { 
+  .icon01,
+  .icon02,
+  .icon03,
+  .icon04 {
+    width: 40%;
+    height:40%;
+    margin: 0 auto;
+    
+
+  }
+
+
+ }
